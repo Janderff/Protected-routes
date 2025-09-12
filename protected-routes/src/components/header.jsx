@@ -12,7 +12,7 @@ export function Header() {
     navigate('/login')
   }
   return (
-    <header className='flex flex-row w-full justify-between my-4 '>
+    <header className='flex flex-row w-full justify-between my-4 border-b border-zinc-200 shadow pb-4'>
       <div className='flex flex-row mx-8 gap-2 items-center text-xl'>
         <Shield className='text-blue-500' />
         <span>Dashboard</span>

@@ -3,6 +3,7 @@
 import React from 'react'
 import { useAuth } from '../contexts/AuthContext'
 import { useNavigate } from 'react-router-dom'
+import { Header } from '../components/header'
 
 const DashboardPage = () => {
   const { user, logout } = useAuth()
@@ -14,10 +15,9 @@ const DashboardPage = () => {
   }
 
   return (
-    <div>
-      <h1>Dashboard</h1>
-      <p>Bem-vindo(a), {user?.name || 'dev'}!</p>
-      <button onClick={handleLogout}>Sair</button>
+    <div className="w-full h-screen">
+      <Header />
+      <div>Ola Dashboard</div>
     </div>
   )
 }

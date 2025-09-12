@@ -15,7 +15,7 @@ const DashboardPage = () => {
   }
 
   return (
-    <div className="w-full h-screen">
+    <div className='w-full h-screen '>
       <Header />
       <div>Ola Dashboard</div>
     </div>

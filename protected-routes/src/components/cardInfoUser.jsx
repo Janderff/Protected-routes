@@ -1,5 +1,5 @@
 import { useAuth } from '../contexts/AuthContext'
-export function CardInfoUser({ name }) {
+export function CardInfoUser({ name, email }) {
   const { user } = useAuth()
   return (
     <div className=' flexw-full m-9 p-3 h-60 bg-zinc-100 rounded-xl border border-zinc-200'>
@@ -11,7 +11,7 @@ export function CardInfoUser({ name }) {
         </div>
         <div className='flex flex-col'>
           <label htmlFor=''>Email</label>
-          <label htmlFor=''>janderffigueiredo@gmail.com</label>
+          <label htmlFor=''>{user?.email || 'dev'}</label>
         </div>
         <div className='flex flex-col'>
           <label>ID</label>

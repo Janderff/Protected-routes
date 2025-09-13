@@ -22,7 +22,7 @@ export const AuthProvider = ({ children }) => {
   const login = async (email, password) => {
     // Em produção: faça uma chamada à API de login e receba { token, user }
     const token = 'jwt-token-de-exemplo'
-    const loggedUser = { name: 'Diego', email }
+    const loggedUser = { name, email }
 
     localStorage.setItem(TOKEN_KEY, token)
     setUser(loggedUser)
